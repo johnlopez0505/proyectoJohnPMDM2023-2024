@@ -11,4 +11,11 @@
     <string name="login_failed">"Login failed"</string>
     <string name="registrate">¿No tienes Cuenta? Registrate</string>
     <string name="login">Login</string>
+    <string name="registraterse">Registrate</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="registrarse">Registrate</string>
+    <string name="regresar">¿Ya tienes Cuenta?  Ingresa</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="bienvenida"> " " </string>
+    <string name="nombre">" "</string>
 </resources>
