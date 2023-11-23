@@ -32,28 +32,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginBottom="15dp"
-            android:elevation="@dimen/cardview_compat_inset_shadow"
             app:cardCornerRadius="25dp"
-            android:backgroundTint="#CED695"
+            app:cardBackgroundColor="#B9DF661E"
             app:cardElevation="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="10dp"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2">
+                    android:layout_weight="1.9">
 
                     <ImageView
                         android:id="@+id/image_view1"
-                        android:layout_width="150dp"
-                        android:layout_height="100dp"
+                        android:layout_width="130dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginStart="10dp"
                         android:background="@mipmap/logo1"/>
 
                 </LinearLayout>
@@ -67,26 +71,41 @@
                     <TextView
                         android:id="@+id/text_bienvenida"
                         android:layout_width="match_parent"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="15dp"
                         android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
                         android:textSize="20dp"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:textAlignment="center"
                         android:text="@string/bienvenido"
-                        android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_height="wrap_content"/>
 
                     <TextView
                         android:id="@+id/textnombre"
                         android:layout_width="match_parent"
-                        android:layout_marginTop="15dp"
                         android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
                         android:textSize="20dp"
-                        android:textStyle="italic"
-
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:text="@string/nombre"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/text_clase"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="@string/clase"
                         android:layout_height="wrap_content"/>
 
                 </LinearLayout>
@@ -101,18 +120,21 @@
 
                     <ImageView
                         android:id="@+id/add"
-                        android:layout_width="59dp"
-                        android:layout_height="50dp"
+                        android:layout_width="74dp"
+                        android:layout_height="59dp"
                         android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
                         android:background="@drawable/add_foreground" />
 
 
                     <ImageView
                         android:id="@+id/delete"
-                        android:layout_width="43dp"
+                        android:layout_width="40dp"
+                        android:layout_marginTop="10dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:background="@android:drawable/ic_menu_delete" />
+                        android:background="@android:drawable/ic_menu_delete"
+                        android:baseline="@dimen/cardview_compat_inset_shadow" />
                 </LinearLayout>
 
 

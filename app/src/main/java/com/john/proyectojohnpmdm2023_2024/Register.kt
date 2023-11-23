@@ -28,7 +28,7 @@ class Register : AppCompatActivity() {
     }
 
 
-    fun comprobarEstado() {
+    private fun comprobarEstado() {
         val name = registerBinding.editTextUsername.text.toString()
         val email = registerBinding.editTextEmail.text.toString()
         val password = registerBinding.editTextPassword.text.toString()
