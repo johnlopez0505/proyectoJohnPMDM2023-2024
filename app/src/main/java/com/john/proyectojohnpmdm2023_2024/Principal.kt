@@ -20,7 +20,7 @@ class Principal : AppCompatActivity() {
     }
 
     private fun initHander() {
-        var handler = Handler(Looper.getMainLooper()) //queremos que el tema de la IU, la llevemos al hilo principal.
+        val handler = Handler(Looper.getMainLooper()) //queremos que el tema de la IU, la llevemos al hilo principal.
         principalBinding.progressCircular.visibility = View.VISIBLE  //hacemos visible el progress
         principalBinding.cardview.visibility =   View.GONE //ocultamos el cardview.
         Thread{
@@ -29,14 +29,14 @@ class Principal : AppCompatActivity() {
                 principalBinding.progressCircular.visibility = View.GONE //ocultamos el progress
 
                 principalBinding.cardview.visibility = View.VISIBLE
-                Toast.makeText(this, "EStamos en la pantalla principal",
+                Toast.makeText(this, "Estamos en la pantalla principal",
                     Toast.LENGTH_SHORT).show()
             }
         }.start()
     }
     private fun login() {
         val txtName = principalBinding.textnombre
-        val name = getIntent().getStringExtra("name")
+        val name = intent.getStringExtra("name")
         if (name!= null){
             txtName.text = "$name"
         }
